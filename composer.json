@@ -1,0 +1,27 @@
+{
+    "name": "ognjen/laravel-validatable",
+    "description": "Validate eloquent model",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ognjen Petrovic",
+            "email": "ognjen.petrovic2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-4": {
+            "Ognjen\\Laravel\\": "src"
+        }   
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.0",
+        "phpunit/phpunit": "^9.5@dev"
+    }
+}

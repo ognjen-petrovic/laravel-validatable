@@ -42,27 +42,27 @@ class User extends Model {
 ```
 
 ```php
-        $user = User::create([
-            'name' =>'name',
-            'email'=>'name@example.com',
-            'age' => 66
-        ]);
-        
-        if ($user->hasValidationErrors())
-        {
-            $user->getValidationErrors();
-        }   
+$user = User::create([
+    'name' =>'name',
+    'email'=>'name@example.com',
+    'age' => 66
+]);
+
+if ($user->hasValidationErrors())
+{
+    $user->getValidationErrors();
+}  
 ```
 
 ```php
-        $user = new User();
-        $user->name = 'name';
-        $user->email = 'name@example.com';
-        $user->age = 'not a numeric';
-        
-        if ($user->save() === false)
-        {
-            $user->getValidationErrors();
-        }   
+$user = new User();
+$user->name = 'name';
+$user->email = 'name@example.com';
+$user->age = 'not a numeric';
+
+if ($user->save() === false)
+{
+    $user->getValidationErrors();
+}     
 ```
 

@@ -1,5 +1,5 @@
 # laravel-validatable
-Validate eloquent model before save save
+Validate eloquent model before saving.
 
 ### Install
 

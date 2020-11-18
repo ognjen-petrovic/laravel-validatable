@@ -5,7 +5,7 @@ Validate eloquent model before saving.
 
 Require package with Composer:
 ```
-composer require ....
+composer require ognjen/laravel-validatable
 ```
 
 ### Usage example

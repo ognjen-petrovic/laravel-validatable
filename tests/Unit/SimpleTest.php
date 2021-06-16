@@ -46,7 +46,7 @@ class SimpleTest extends TestCase
 
         $this->assertTrue($user->hasValidationErrors());
         $this->assertEquals(
-            USER::VALIDATION_MESSAGES['age.numeric'], 
+            User::VALIDATION_MESSAGES['age.numeric'], 
             $errors['age'][0]);
     }
 
@@ -59,5 +59,11 @@ class SimpleTest extends TestCase
         ]);
 
         $this->assertFalse($user->hasValidationErrors());
+    }
+
+    public function test_hasValidationErrors_method() {
+        $user = new User;
+        $user->hasValidationErrors();
+        $this->assertTrue(true);
     }
 }

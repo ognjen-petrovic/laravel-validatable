@@ -51,6 +51,7 @@ trait Validatable{
 
     public function hasValidationErrors(): bool
     {
+        if (empty($this->validationErrors)) return false;
         return $this->validationErrors->isNotEmpty();
     }
 }
